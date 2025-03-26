@@ -41,6 +41,7 @@ Brief description of the project, its purpose, and the problem it solves.
 High-level overview of the architecture with a link to detailed documentation.
 
 ![Physical Network Topology][def-pnt]
+
 ![Logical OpenStack Architecture][def-losa]
 
 ## Technologies Used
@@ -71,4 +72,4 @@ Planned or potential enhancements.
 [def-kolla-ansible]: https://docs.openstack.org/kolla-ansible/latest/
 [def-claudio]: https://www.linkedin.com/in/claudio-lichtenthal-50a33a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bconli94pS%2BWnzzuq8pf9MQ%3D%3D
 [def-pnt]: architecture/diagrams/oslpg-guide-p2d-physical-network-topology-v3.svg
-[def-losa]: oslpg-guide-p3d-logical-openstack-architecture-v3.svg
+[def-losa]: architecture/diagrams/oslpg-guide-p3d-logical-openstack-architecture-v3.svg
