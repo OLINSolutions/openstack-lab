@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1055.9662 815.97389"
+   version="1.1"
+   id="svg72"
+   sodipodi:docname="oslpg-guide-p2d-physical-network-topology-v3.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   width="11in"
+   height="8.5in"
+   inkscape:export-filename="oslpg-guide-p2d-physical-network-topology-v3.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs72">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17-8" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview72"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="1.056"
+     inkscape:cx="513.73106"
+     inkscape:cy="406.25"
+     inkscape:window-width="1912"
+     inkscape:window-height="1099"
+     inkscape:window-x="490"
+     inkscape:window-y="155"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer3"
+     inkscape:document-units="in">
+    <inkscape:grid
+       id="grid72"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <!-- Background -->
+  <!-- Title -->
+  <text
+     x="500"
+     y="70"
+     font-family="Arial"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text1">OpenStack Physical Network Topology - Revised Architecture</text>
+  <!-- Internet -->
+  <g
+     id="g85"
+     transform="translate(0,27.999104)">
+    <rect
+       x="450"
+       y="60"
+       width="100"
+       height="50"
+       rx="10"
+       fill="#e9ecef"
+       stroke="#343a40"
+       stroke-width="2"
+       id="rect2" />
+    <text
+       x="500"
+       y="90"
+       font-family="Arial"
+       font-size="16px"
+       text-anchor="middle"
+       id="text2">Internet</text>
+  </g>
+  <!-- Firewalla Gold -->
+  <g
+     id="g83"
+     transform="translate(0,9.99968)">
+    <rect
+       x="400"
+       y="150"
+       width="200"
+       height="60"
+       rx="5"
+       fill="#f8f9fa"
+       stroke="#343a40"
+       stroke-width="2"
+       id="rect3" />
+    <text
+       x="500"
+       y="175"
+       font-family="Arial"
+       font-size="16px"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text3">Firewalla Gold</text>
+    <text
+       x="500"
+       y="195"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="middle"
+       id="text4">Router/Firewall</text>
+  </g>
+  <!-- Lines from Internet to Firewalla -->
+  <line
+     x1="500"
+     y1="140"
+     x2="500"
+     y2="160"
+     stroke="#343a40"
+     stroke-width="1.41421"
+     id="line4"
+     style="stroke-width:2.99990399;stroke-dasharray:none" />
+  <text
+     x="510"
+     y="152.99945"
+     font-family="Arial"
+     font-size="12px"
+     id="text5">WAN(Port4)</text>
+  <!-- TL-SG3210 External Network Switch -->
+  <!-- Primary TL-SG2424 Management Network Switch -->
+  <!-- Secondary TL-SG2424 Storage Network Switch -->
+  <!-- Line from Firewalla to Switches -->
+  <line
+     x1="400"
+     y1="210"
+     x2="200"
+     y2="260"
+     stroke="#fd7e14"
+     stroke-width="3"
+     id="line11" />
+  <text
+     x="270"
+     y="235"
+     font-family="Arial"
+     font-size="12px"
+     fill="#fd7e14"
+     id="text12">Port 1</text>
+  <line
+     x1="500"
+     y1="220.99968"
+     x2="500"
+     y2="260"
+     stroke="#51cf66"
+     stroke-width="2.64954"
+     id="line12" />
+  <text
+     x="510"
+     y="235"
+     font-family="Arial"
+     font-size="12px"
+     fill="#51cf66"
+     id="text13">Port 2</text>
+  <line
+     x1="600"
+     y1="210"
+     x2="800"
+     y2="260"
+     stroke="#339af0"
+     stroke-width="3"
+     id="line13" />
+  <text
+     x="715"
+     y="235"
+     font-family="Arial"
+     font-size="12px"
+     fill="#339af0"
+     id="text14">Port 3</text>
+  <!-- Netgear Switch for future expansion -->
+  <rect
+     x="702.5697"
+     y="117.6833"
+     width="246.18457"
+     height="49.784904"
+     rx="6.154614"
+     fill="#f8f9fa"
+     stroke="#adb5bd"
+     stroke-width="2.21416"
+     stroke-dasharray="5, 5"
+     id="rect14" />
+  <text
+     x="826.13635"
+     y="139.576"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6c757d"
+     id="text15"><tspan
+       sodipodi:role="line"
+       x="826.13635"
+       y="139.576"
+       id="tspan3">TP-LINK and Netgear switches</tspan><tspan
+       sodipodi:role="line"
+       x="826.13635"
+       y="157.076"
+       id="tspan4">(Future Expansion)</tspan></text>
+  <line
+     x1="697.8595"
+     y1="170.96552"
+     x2="591.72388"
+     y2="264.71631"
+     stroke="#adb5bd"
+     stroke-width="4.65096"
+     stroke-dasharray="5, 5"
+     id="line15" />
+  <!-- Server Nodes -->
+  <!-- Primary Controller -->
+  <!-- Secondary Controller -->
+  <!-- Compute Node 1 -->
+  <!-- Compute Node 2 -->
+  <!-- Add. Compute Node -->
+  <!-- Storage Node 1 -->
+  <!-- Storage Node 2 -->
+  <!-- Storage Node 3 -->
+  <!-- Network Connections from Switches to Servers -->
+  <!-- Management Network Connections (green) -->
+  <!-- Storage Network Connections (blue) -->
+  <!-- External Network Connections (orange) -->
+  <!-- Legend -->
+  <!-- Bond Information -->
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Switches">
+    <g
+       id="g80">
+      <rect
+         x="100"
+         y="260"
+         width="200"
+         height="60"
+         rx="5"
+         fill="#ffe8cc"
+         stroke="#fd7e14"
+         stroke-width="2"
+         id="rect5" />
+      <text
+         x="200"
+         y="285"
+         font-family="Arial"
+         font-size="16px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text6">CBS350-24T-4G #3</text>
+      <text
+         x="200"
+         y="305"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text7"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+   id="tspan87">External</tspan> Network (192.168.7.0/24)</text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.9996px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;stroke-width:1.99994;stroke-dasharray:none"
+         x="841.12787"
+         y="785.47473"
+         id="text88"><tspan
+           sodipodi:role="line"
+           id="tspan88"
+           style="stroke-width:1.99994"
+           x="841.12787"
+           y="785.47473">Printed: 2025-03-04 @ 14:45 MDT</tspan></text>
+    </g>
+    <g
+       id="g81">
+      <rect
+         x="391.51587"
+         y="260.0386"
+         width="216.02126"
+         height="59.922775"
+         rx="5.4005318"
+         fill="#d3f9d8"
+         stroke="#51cf66"
+         stroke-width="2.07722"
+         id="rect7" />
+      <text
+         x="500"
+         y="285"
+         font-family="Arial"
+         font-size="16px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text8">CBS350-24T-4G #1</text>
+      <text
+         x="500"
+         y="305"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text9"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+   id="tspan86">Management</tspan> Network (192.168.0.0/23)</text>
+    </g>
+    <g
+       id="g82">
+      <rect
+         x="700"
+         y="260"
+         width="200"
+         height="60"
+         rx="5"
+         fill="#d0ebff"
+         stroke="#339af0"
+         stroke-width="2"
+         id="rect9" />
+      <text
+         x="800"
+         y="285"
+         font-family="Arial"
+         font-size="16px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text10">CBS350-24T-4G #2</text>
+      <text
+         x="800"
+         y="305"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text11"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+   id="tspan85">Storage</tspan> Network (192.168.4.0/23)</text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Server Connections">
+    <line
+       x1="140"
+       y1="360"
+       x2="160.69333"
+       y2="320.1535"
+       stroke="#fd7e14"
+       stroke-width="1.20021"
+       id="line63"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="278.55252"
+       y1="379.69028"
+       x2="179.62686"
+       y2="321.05936"
+       stroke="#fd7e14"
+       stroke-width="0.391961"
+       id="line64"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="435.04077"
+       y1="508.73911"
+       x2="225.35432"
+       y2="319.26834"
+       stroke="#fd7e14"
+       stroke-width="1.52873"
+       id="line65"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="680.63281"
+       y1="508.66998"
+       x2="240.45398"
+       y2="320.7233"
+       stroke="#fd7e14"
+       stroke-width="1.76875"
+       id="line66"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="850"
+       y1="510"
+       x2="280.14389"
+       y2="321.22153"
+       stroke="#fd7e14"
+       stroke-width="1.76875"
+       id="line66-0"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot-8)" />
+    <line
+       x1="230"
+       y1="366.19354"
+       x2="390.83743"
+       y2="316.35596"
+       stroke="#51cf66"
+       stroke-width="1.15947"
+       id="line47"
+       style="stroke-width:2.02826;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="386.4913"
+       y1="360.06891"
+       x2="469.37463"
+       y2="319.93109"
+       stroke="#51cf66"
+       stroke-width="0.518875"
+       id="line48"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="458.776"
+       y1="510.48676"
+       x2="478.91681"
+       y2="319.63989"
+       stroke="#51cf66"
+       stroke-width="1.68819"
+       id="line49"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="719.41626"
+       y1="509.30258"
+       x2="560.64594"
+       y2="320.62863"
+       stroke="#51cf66"
+       stroke-width="1.80446"
+       id="line50"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="560"
+       y1="660"
+       x2="530"
+       y2="320"
+       stroke="#51cf66"
+       stroke-width="1.05295"
+       id="line50-3"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="889.58844"
+       y1="509.10873"
+       x2="590.41815"
+       y2="320.88333"
+       stroke="#51cf66"
+       stroke-width="1.853"
+       id="line51"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="100.70708"
+       y1="659.35883"
+       x2="409.48276"
+       y2="320.73428"
+       stroke="#51cf66"
+       stroke-width="1.90871"
+       id="line52"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="440"
+       y1="660"
+       x2="509.01498"
+       y2="320.17227"
+       stroke="#51cf66"
+       stroke-width="1.1203"
+       id="line53"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="230"
+       y1="407.55936"
+       x2="700.1543"
+       y2="301.03448"
+       stroke="#339af0"
+       stroke-width="1.29901"
+       id="line55"
+       style="stroke-width:1.93852;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="460.21561"
+       y1="370.71149"
+       x2="699.77661"
+       y2="308.30988"
+       stroke="#339af0"
+       stroke-width="0.949869"
+       id="line56"
+       style="stroke-width:1.82263;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="510.68796"
+       y1="509.35046"
+       x2="709.31464"
+       y2="320.65213"
+       stroke="#339af0"
+       stroke-width="1.88933"
+       id="line57"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="750"
+       y1="510"
+       x2="759.06384"
+       y2="320.09607"
+       stroke="#339af0"
+       stroke-width="1.28035"
+       id="line58"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="919.37561"
+       y1="509.55219"
+       x2="810.60901"
+       y2="320.46341"
+       stroke="#339af0"
+       stroke-width="1.56474"
+       id="line59"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="150.45576"
+       y1="659.05878"
+       x2="699.47821"
+       y2="310.77148"
+       stroke="#339af0"
+       stroke-width="1.87399"
+       id="line60"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <line
+       x1="460.41354"
+       y1="659.06213"
+       x2="719.46863"
+       y2="320.51904"
+       stroke="#339af0"
+       stroke-width="1.48878"
+       id="line61"
+       style="stroke-width:1.99993599;stroke-dasharray:none;marker-start:url(#Dot)" />
+    <line
+       x1="590"
+       y1="660"
+       x2="740"
+       y2="320"
+       stroke="#339af0"
+       stroke-width="1.43548"
+       id="line62"
+       style="marker-start:url(#Dot);stroke-width:1.99993599;stroke-dasharray:none" />
+    <g
+       id="g48"
+       transform="translate(9.99968,17.999424)">
+      <rect
+         x="40.146732"
+         y="70.059486"
+         width="252.56305"
+         height="118.67619"
+         rx="7.0156398"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.58084"
+         id="rect35-5" />
+      <rect
+         x="53.000061"
+         y="97.999458"
+         width="20"
+         height="10"
+         fill="#d3f9d8"
+         stroke="#51cf66"
+         stroke-width="2"
+         id="rect66" />
+      <text
+         x="78.000061"
+         y="107.99946"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text66">Management Network</text>
+      <rect
+         x="53.000061"
+         y="117.99946"
+         width="20"
+         height="10"
+         fill="#d0ebff"
+         stroke="#339af0"
+         stroke-width="2"
+         id="rect67" />
+      <text
+         x="78.000061"
+         y="127.99946"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text67">Storage Network</text>
+      <rect
+         x="53.000061"
+         y="137.99947"
+         width="20"
+         height="10"
+         fill="#ffe8cc"
+         stroke="#fd7e14"
+         stroke-width="2"
+         id="rect68" />
+      <text
+         x="78.000061"
+         y="147.99947"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text68">External Network</text>
+      <rect
+         x="203.00006"
+         y="97.999458"
+         width="20"
+         height="10"
+         fill="#b197fc"
+         stroke="#343a40"
+         stroke-width="2"
+         id="rect69" />
+      <text
+         x="228.00006"
+         y="107.99946"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text69">Controller</text>
+      <rect
+         x="203.00006"
+         y="117.99946"
+         width="20"
+         height="10"
+         fill="#ffc9c9"
+         stroke="#343a40"
+         stroke-width="2"
+         id="rect70" />
+      <text
+         x="228.00006"
+         y="127.99946"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text70">Compute</text>
+      <rect
+         x="203.00006"
+         y="137.99947"
+         width="20"
+         height="10"
+         fill="#a5d8ff"
+         stroke="#343a40"
+         stroke-width="2"
+         id="rect71" />
+      <text
+         x="228.00006"
+         y="147.99947"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text71">Storage</text>
+      <text
+         x="142.63672"
+         y="84.736458"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="text71-1"
+         style="font-size:13.3329px"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+           id="tspan48">Legend</tspan></text>
+      <text
+         x="162.00055"
+         y="167.99947"
+         font-family="Arial"
+         font-size="12px"
+         font-style="italic"
+         text-anchor="middle"
+         id="text72"><tspan
+           sodipodi:role="line"
+           id="tspan83"
+           x="162.00055"
+           y="167.99947">Note: Lines represent logical connections.</tspan><tspan
+           sodipodi:role="line"
+           id="tspan84"
+           x="162.00055"
+           y="182.99947">See bonding configuration for details.</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Servers">
+    <g
+       id="g2">
+      <rect
+         x="50.043365"
+         y="360.04337"
+         width="179.91327"
+         height="108.91327"
+         rx="4.997591"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.08673"
+         id="rect15" />
+      <rect
+         x="50"
+         y="360"
+         width="180"
+         height="30"
+         rx="5"
+         fill="#b197fc"
+         stroke="#343a40"
+         stroke-width="2"
+         id="rect16" />
+      <text
+         x="140"
+         y="380"
+         font-family="Arial"
+         font-size="14px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text16">Primary Controller</text>
+      <text
+         x="140"
+         y="403.00006"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text17">linux04.olinonline.net</text>
+      <text
+         x="140"
+         y="417.93896"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text18">Dell PowerEdge R710</text>
+      <text
+         x="140"
+         y="435.36813"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text19">16 vCPUs, 74GB RAM</text>
+      <text
+         x="139.99908"
+         y="451.00012"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="text19-9"
+         style="font-size:10.6663px"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           x="139.99908"
+           y="451.00012"
+           style="font-size:10.6663px">(512GB RAID1, 1TB SSD RAID1,</tspan><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           x="139.99908"
+           y="464.33301"
+           style="font-size:10.6663px">1TB HDD RAID1)</tspan></text>
+    </g>
+    <g
+       id="g3">
+      <rect
+         x="280.04337"
+         y="360.04337"
+         width="179.91327"
+         height="108.91327"
+         rx="4.997591"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.08673"
+         id="rect19" />
+      <rect
+         x="280.04337"
+         y="360.04337"
+         width="179.91327"
+         height="32.673981"
+         rx="4.997591"
+         fill="#b197fc"
+         stroke="#343a40"
+         stroke-width="2.08673"
+         id="rect20" />
+      <text
+         x="386.23068"
+         y="365.78043"
+         font-family="Arial"
+         font-size="14.6071px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text20"
+         transform="scale(0.95797671,1.0438667)"
+         style="stroke-width:1.04336">Secondary Controller</text>
+      <text
+         x="386.23068"
+         y="389.94864"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text21"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">linux07.olinonline.net</text>
+      <text
+         x="386.23068"
+         y="406.37326"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text22"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">Supermicro X8DTT</text>
+      <text
+         x="386.23068"
+         y="425.13324"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text23"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">12 vCPUs, 96GB RAM</text>
+      <text
+         x="386.2301"
+         y="443.17795"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text23-8"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">(1TB HDD RAID1)</text>
+    </g>
+    <g
+       id="g4">
+      <rect
+         x="358.04312"
+         y="510.04333"
+         width="179.91327"
+         height="108.91327"
+         rx="4.997591"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.08673"
+         id="rect23" />
+      <rect
+         x="358.04312"
+         y="510.04333"
+         width="179.91327"
+         height="32.673981"
+         rx="4.997591"
+         fill="#ffc9c9"
+         stroke="#343a40"
+         stroke-width="2.08673"
+         id="rect24" />
+      <text
+         x="467.65204"
+         y="509.47693"
+         font-family="Arial"
+         font-size="14.6071px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text24"
+         transform="scale(0.95797671,1.0438667)"
+         style="stroke-width:1.04336">Compute 1</text>
+      <text
+         x="467.65204"
+         y="533.64514"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text25"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">linux05.olinonline.net</text>
+      <text
+         x="467.65204"
+         y="550.07007"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text26"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">Supermicro SYS-1028TR-T</text>
+      <text
+         x="467.65204"
+         y="568.83038"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text27"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">56 vCPUs, 128GB RAM</text>
+      <text
+         x="467.65118"
+         y="586.87537"
+         font-family="Arial"
+         font-size="12.5204px"
+         text-anchor="middle"
+         id="text27-8"
+         transform="scale(0.95797672,1.0438667)"
+         style="stroke-width:1.04336">(5.6TB SSD RAID5)</text>
+    </g>
+    <g
+       id="g5">
+      <rect
+         x="590.0481"
+         y="509.04828"
+         width="179.90385"
+         height="109.90367"
+         rx="4.9973292"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.09614"
+         id="rect27" />
+      <rect
+         x="590.0481"
+         y="509.04828"
+         width="179.90385"
+         height="32.9711"
+         rx="4.9973292"
+         fill="#ffc9c9"
+         stroke="#343a40"
+         stroke-width="2.09614"
+         id="rect28" />
+      <text
+         x="713.06812"
+         y="506.40283"
+         font-family="Arial"
+         font-size="14.673px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text28"
+         transform="scale(0.95362558,1.0486296)"
+         style="stroke-width:1.04807">Compute 2</text>
+      <text
+         x="713.06812"
+         y="530.69739"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text29"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">linux06.olinonline.net</text>
+      <text
+         x="713.06812"
+         y="547.16168"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text30"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">Supermicro SYS-1028TR-T</text>
+      <text
+         x="713.06812"
+         y="565.97192"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text31"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">56 vCPUs, 128GB RAM</text>
+      <text
+         x="713.0672"
+         y="584.0636"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text31-5"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">(5.6TB SSD RAID5)</text>
+    </g>
+    <g
+       id="g6">
+      <rect
+         x="820.0481"
+         y="509.04828"
+         width="179.90385"
+         height="109.90367"
+         rx="4.9973292"
+         fill="#f8f9fa"
+         stroke="#343a40"
+         stroke-width="2.09614"
+         id="rect31" />
+      <rect
+         x="820.0481"
+         y="509.04828"
+         width="179.90385"
+         height="32.9711"
+         rx="4.9973292"
+         fill="#ffc9c9"
+         stroke="#343a40"
+         stroke-width="2.09614"
+         id="rect32" />
+      <text
+         x="954.25293"
+         y="506.40283"
+         font-family="Arial"
+         font-size="14.673px"
+         font-weight="bold"
+         text-anchor="middle"
+         id="text32"
+         transform="scale(0.95362558,1.0486296)"
+         style="stroke-width:1.04807">Compute 3</text>
+      <text
+         x="954.25293"
+         y="530.69739"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text33"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">linux08.olinonline.net</text>
+      <text
+         x="954.25293"
+         y="547.16168"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text34"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">Supermicro X8DTT</text>
+      <text
+         x="954.25293"
+         y="565.97192"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text35"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">12 vCPUs, 96GB RAM</text>
+      <text
+         x="954.25159"
+         y="584.0636"
+         font-family="Arial"
+         font-size="12.5768px"
+         text-anchor="middle"
+         id="text35-9"
+         transform="scale(0.95362557,1.0486296)"
+         style="stroke-width:1.04807">(2TB HDD RAID1)</text>
+    </g>
+    <rect
+       x="50.086933"
+       y="660.04358"
+       width="179.82614"
+       height="108.91329"
+       rx="4.9951706"
+       fill="#f8f9fa"
+       stroke="#343a40"
+       stroke-width="2.08622"
+       id="rect35" />
+    <rect
+       x="50.086933"
+       y="660.04358"
+       width="179.82614"
+       height="32.673988"
+       rx="4.9951706"
+       fill="#a5d8ff"
+       stroke="#343a40"
+       stroke-width="2.08622"
+       id="rect36" />
+    <text
+       x="146.17676"
+       y="653.01538"
+       font-family="Arial"
+       font-size="14.6036px"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text36"
+       transform="scale(0.9577446,1.0441197)"
+       style="stroke-width:1.04311">Storage 1</text>
+    <text
+       x="146.17676"
+       y="677.1778"
+       font-family="Arial"
+       font-size="12.5173px"
+       text-anchor="middle"
+       id="text37"
+       transform="scale(0.9577446,1.0441197)"
+       style="stroke-width:1.04311">linux01.olinonline.net</text>
+    <text
+       x="146.17676"
+       y="690.99554"
+       font-family="Arial"
+       font-size="12.5173px"
+       text-anchor="middle"
+       id="text38"
+       transform="scale(0.9577446,1.0441197)"
+       style="stroke-width:1.04311">ASRock Z97</text>
+    <text
+       x="146.17676"
+       y="704.81323"
+       font-family="Arial"
+       font-size="12.5173px"
+       text-anchor="middle"
+       id="text39"
+       transform="scale(0.9577446,1.0441197)"
+       style="stroke-width:1.04311">8 vCPUs, 32GB RAM, 5TB</text>
+    <text
+       x="146.17603"
+       y="718.90308"
+       font-family="Arial"
+       font-size="12.5173px"
+       text-anchor="middle"
+       id="text39-3"
+       transform="scale(0.9577446,1.0441197)"
+       style="font-size:10.6663px;stroke-width:1.04311"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="146.17603"
+         y="718.90308">(512GB SSD + 1TB SSD RAID1</tspan><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="146.17603"
+         y="732.23596">+ 4TB HDD RAID5)</tspan></text>
+    <rect
+       x="280.04337"
+       y="660.04333"
+       width="179.91327"
+       height="108.91327"
+       rx="4.997591"
+       fill="#f8f9fa"
+       stroke="#343a40"
+       stroke-width="2.08673"
+       id="rect39" />
+    <rect
+       x="280.04337"
+       y="660.04333"
+       width="179.91327"
+       height="32.673981"
+       rx="4.997591"
+       fill="#a5d8ff"
+       stroke="#343a40"
+       stroke-width="2.08673"
+       id="rect40" />
+    <text
+       x="386.23068"
+       y="653.17346"
+       font-family="Arial"
+       font-size="14.6071px"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text40"
+       transform="scale(0.95797671,1.0438667)"
+       style="stroke-width:1.04336">Storage 2</text>
+    <text
+       x="386.23068"
+       y="677.34161"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text41"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">linux02.olinonline.net</text>
+    <text
+       x="386.23068"
+       y="694.5451"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text42"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">ASRock Z97</text>
+    <text
+       x="386.23068"
+       y="711.7486"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text43"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">8 vCPUs, 32GB RAM, 4TB</text>
+    <text
+       x="386.23013"
+       y="730.57214"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text43-3"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">(512GB SSD + 6TB HDD RAID6)</text>
+    <rect
+       x="510.04337"
+       y="660.04333"
+       width="179.91327"
+       height="108.91327"
+       rx="4.997591"
+       fill="#f8f9fa"
+       stroke="#343a40"
+       stroke-width="2.08673"
+       id="rect43" />
+    <rect
+       x="510.04337"
+       y="660.04333"
+       width="179.91327"
+       height="32.673981"
+       rx="4.997591"
+       fill="#a5d8ff"
+       stroke="#343a40"
+       stroke-width="2.08673"
+       id="rect44" />
+    <text
+       x="626.32001"
+       y="653.17346"
+       font-family="Arial"
+       font-size="14.6071px"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text44"
+       transform="scale(0.95797671,1.0438667)"
+       style="stroke-width:1.04336">Storage 3</text>
+    <text
+       x="626.32001"
+       y="677.34161"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text45"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">linux03.olinonline.net</text>
+    <text
+       x="626.32001"
+       y="691.16736"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text46"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">ASRock Z97</text>
+    <text
+       x="626.32001"
+       y="704.98694"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text47"
+       transform="scale(0.95797672,1.0438667)"
+       style="stroke-width:1.04336">8 vCPUs, 32GB RAM, 9TB</text>
+    <text
+       x="626.31915"
+       y="719.07678"
+       font-family="Arial"
+       font-size="12.5204px"
+       text-anchor="middle"
+       id="text47-6"
+       transform="scale(0.95797672,1.0438667)"
+       style="font-size:10.6663px;stroke-width:1.04336"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="626.31915"
+         y="719.07678"
+         style="font-size:10.6663px">(2TB SSD RAID1 + 6TB HDD RAID1</tspan><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="626.31915"
+         y="732.40967"
+         style="font-size:10.6663px">+ 2TB HDD RAID1)</tspan></text>
+  </g>
+</svg>
